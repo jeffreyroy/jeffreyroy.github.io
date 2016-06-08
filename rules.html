@@ -2,18 +2,27 @@
 <html>
 <head>
 	<title>Rules of Chess</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
 </head>
 <body>
 	<header>
-		<h1>Rules of Chess</h1>
-		<hr />
+		<nav>
+		<ul>
+			<li class="map"><a class="ma" href="rules.html">Rules</a></li>
+			<li class="map"><a class="ma" href="openings.html">Openings</a></li>
+			<li class="map"><a class="ma" href="strategy.html">Strategy</a></li>
+			<li class="map"><a class="ma" href="https://en.wikipedia.org/wiki/History_of_chess">History</a></li>
+		</ul>
+		</nav>
+
 	</header>
 	<div>
-		<img src="images/setup.gif" alt="Chess board set up" />
+		<h1>Rules of Chess</h1>
 		<p>Chess is played on an 8x8 board with alternating dark and light squares.  Each side has sixteen pieces.  The move of each piece is described below.</p>
-	</div>
-	<div>
-		<table border="1">
+		<img src="images/setup.gif" alt="Chess board set up" height="180" width="180" class="left-side" />
+
+		<table class="left-side">
 			<tr>
 				<th>Piece</th>
 				<th>Name</th>
@@ -50,8 +59,8 @@
 				<td>One space forward<sup>*</sup></td>
 			</tr>
 		</table>
-		<p><sup>*</sup>A pawn captures one space diagonally forward.  A pawn may move two spaces forward on its first move.</p>
 	</div>
+		<p><sup>*</sup>A pawn captures one space diagonally forward.  A pawn may move two spaces forward on its first move.</p>
 	<footer>
 		Return to <a href="index.html">home page</a>.
 	</footer>
