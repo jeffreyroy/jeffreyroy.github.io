@@ -2,8 +2,18 @@
 html {
 	background-image: url("");
 }
+
+
+
 body {
 	font-family: georgia, serif;
+}
+
+/* Use larger font on mobile phones */
+@media (max-width: 480px) {
+	body {
+	font-size: 200%;
+	}
 }
 header {
 	border: 2px solid darkblue;
@@ -34,8 +44,22 @@ th,td {
 	margin-right: 50px;
 	padding: 10px;
 	border: 1px solid black;
-	width: 100px;
 }
+/* Use narrower margin if small window */
+@media (max-width: 768px) {
+	.map {
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+}
+
+/* Display in block form if really small window */
+@media (max-width: 480px) {
+	.map {
+		display: block;
+	}
+}
+
 .ma {
 	font-family: arial, sans-serif;
 	color: yellow;
