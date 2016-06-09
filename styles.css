@@ -54,7 +54,7 @@ th,td {
 }
 
 /* Display in block form if really small window */
-@media (max-width: 480px) {
+@media (max-device-width: 640px) {
 	.map {
 		display: block;
 	}
