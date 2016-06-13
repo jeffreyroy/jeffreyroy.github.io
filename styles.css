@@ -1,6 +1,6 @@
 
-html {
-	background-image: url("");
+.chess-back {
+	background-image: url("images/chessb4.jpg");
 }
 
 
@@ -9,18 +9,20 @@ body {
 	font-family: georgia, serif;
 }
 
-/* Use larger font on mobile phones */
-@media (max-width: 480px) {
-	body {
-	font-size: 200%;
-	}
-}
 header {
-	border: 2px solid darkblue;
+/*	border: 2px solid darkblue; */
 	text-align: center;
+	font-family: arial, sans-serif;
+	background-color: darkblue;
+	padding-bottom: 10px;
+	padding-top: 1px;
 }
 h1, h2 {
 	text-align: center;
+}
+h1 {
+	padding-bottom: 15px;
+	border-bottom: 1px solid darkblue;
 }
 table {
 	border: 1px solid gray;
@@ -28,7 +30,7 @@ table {
 }
 img {
 	border: 1px solid black;
-	padding: 3px;
+	padding: 4px;
 }
 th,td {
 	border: 1px solid gray;
@@ -40,29 +42,107 @@ th,td {
 .map {
 	background-color: darkblue;
 	display: inline;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 5px;
+	margin-right: 5px;
 	padding: 10px;
-	border: 1px solid black;
+	float: left;
+	width: 100px;
 }
-/* Use narrower margin if small window */
-@media (max-width: 768px) {
-	.map {
+.search-form {
+	margin-left: 5px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+.search-input {
+	width: 250px;
+	height: 33px;
+	float: left;
 	margin-left: 10px;
-	margin-right: 10px;
+}
+.search-button {
+	padding: 10px;
+}
+/* Display search form below if window small */
+@media (max-width: 1024px) {
+
+	.search-form {
+		clear: left;
 	}
 }
 
-/* Display in block form if really small window */
+/* Display in block form on mobile devices */
 @media (max-device-width: 640px) {
+	html {
+		font-size: 150%;
+	}
+	header {
+		font-size: 200%;
+	}
 	.map {
+		clear: both;
+		display: block;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+	}
+	.search-input {
+		clear: both;
+		width: 100%;
+		margin: 5px;
+	}
+	.search-button {
+		clear: both;
+		width: 100%;
 		display: block;
 	}
 }
 
-.ma {
+#tarrasch {
+	float: right;
+	width: 250px;
+	margin-left: 20px;
+	font-style: italic;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.ma:link {
 	font-family: arial, sans-serif;
-	color: yellow;
+	color: white;
 	text-align: center;
 	text-decoration: none;
+}
+
+.ma:visited {
+	color: yellow;
+}
+
+.ma:hover {
+	text-decoration: underline;
+}
+
+.chessboard {
+	background-color: black;
+	border: 2px solid black;
+}
+
+.light {
+	width: 50px;
+	height: 50px;
+	background-color: beige;
+	font-size: 40px;
+	text-align: center;
+/*	text-shadow: 0px 0px 4px black; */
+
+}
+
+.dark {
+	width: 50px;
+	height: 50px;
+	background-color: darkgreen;
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 0px 0px 5px white;
+
 }
