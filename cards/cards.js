@@ -1,16 +1,16 @@
 // Definition of playing cards and decks
 
 // Suit class
-function Suit(name, char = name[0].toUpperCase(), plural = name + "s") {
+function Suit(name) {
   this.name = name;
-  this.char = char;
-  this.plural = plural;
+  this.char = name[0].toUpperCase();
+  this.plural = name + "s";
 }
 
 // Rank class
-function Rank(number, name = number.toString(), char = name[0].toUpperCase()) {
+function Rank(number, name ) {
   this.name = name;
-  this.char = char;
+  this.char = name[0].toUpperCase();
   this.number = number;
 }
 
