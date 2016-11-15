@@ -5,6 +5,7 @@
 function Game() {
   // Used to hold card currently being manipulated
   this.activeCard = null;
+  this.imageFolder = "images/"
 }
 
 // Redefine for particular game
