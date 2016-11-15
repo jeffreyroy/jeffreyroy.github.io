@@ -33,12 +33,18 @@ th,td {
 	float:left;
 	margin-right: 10px;
 }
-.map {
+.top {
+	padding: 10px;
+	
+}
+.blue {
 	background-color: darkblue;
+	
+}
+.map {
 	display: inline;
 	margin-left: 5px;
 	margin-right: 5px;
-	padding: 10px;
 	float: left;
 	width: 100px;
 }
