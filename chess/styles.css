@@ -1,4 +1,10 @@
 
+.chess-back {
+	background-image: url("images/chessb4.jpg");
+}
+
+
+
 body {
 	font-family: georgia, serif;
 }
@@ -33,18 +39,12 @@ th,td {
 	float:left;
 	margin-right: 10px;
 }
-.top {
-	padding: 10px;
-	
-}
-.blue {
-	background-color: darkblue;
-	
-}
 .map {
+	background-color: darkblue;
 	display: inline;
 	margin-left: 5px;
 	margin-right: 5px;
+	padding: 10px;
 	float: left;
 	width: 100px;
 }
