@@ -23,7 +23,7 @@ function Card(suit, rank) {
     // id is abbreviated name, e.g. "sa" for ace of spades
     this.id = suit.char + rank.char;
     // Use id for image name
-    this.image = this.id + ".bmp";
+    this.image = this.id.toLowerCase() + ".bmp";
   }
 }
 
