@@ -163,9 +163,10 @@ var moveCard = function(cardImage, destinationCell) {
 // Functions to add cards to the tableau
 // A card can be either clickable or draggable, but not both
 // The library cards.js is required to get card data
+// game.js required for image folder reference
 
 addCard = function(cell, card) {
-    var src = "images/" + card.image;
+    var src = game.imageFolder + card.image;
     var imageNode = document.createElement("img");
     imageNode.setAttribute("src", src);
     imageNode.setAttribute("id", card.id);
@@ -173,7 +174,7 @@ addCard = function(cell, card) {
 }
 
 addDraggableCard = function(cell, card) {
-    var src = "images/" + card.image;
+    var src = game.imageFolder + card.image;
     var imageNode = document.createElement("img");
     imageNode.setAttribute("src", src);
     imageNode.setAttribute("id", card.id);
@@ -182,7 +183,7 @@ addDraggableCard = function(cell, card) {
 }
 
 addClickableCard = function(cell, card) {
-    var src = "images/" + card.image;
+    var src = game.imageFolder + card.image;
     var imageNode = document.createElement("img");
     imageNode.setAttribute("src", src);
     imageNode.setAttribute("id", card.id);

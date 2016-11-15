@@ -1,5 +1,6 @@
 // Generate new game
 game = new Game();
+game.imageFolder = "./images/"
 
 // type = "baker" for Baker's Game or "freecell" for FreeCell
 var type = "baker";

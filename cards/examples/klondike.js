@@ -1,5 +1,6 @@
 // Generate new game
 game = new Game();
+game.imageFolder = "./images/"
 
 // Variable to hold group of cards being moved
 game.activeGroup = [];
