@@ -1,4 +1,10 @@
 
+.chess-back {
+	background-image: url("images/chessb4.jpg");
+}
+
+
+
 body {
 	font-family: georgia, serif;
 }
